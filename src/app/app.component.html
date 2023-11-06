@@ -1,16 +1,43 @@
-<div>
-  <div>Country list with search</div>
-  <lib-country-list [preferredCountryCodes]="preferredCountryCodes" [blockedCountryCodes]="blockedCountryCodes"
-    [allowedCountryCodes]="allowedCountryCodes" [selectedCountryConfig]="selectedCountryConfig"
-    [countryListConfig]="countryListConfig" (onCountryChange)="onCountryChange($event)"></lib-country-list>
-  <!-- <app-country-list [preferredCountryCodes]="preferredCountryCodes" [blockedCountryCodes]="blockedCountryCodes"
-    [allowedCountryCodes]="allowedCountryCodes" [selectedCountryConfig]="selectedCountryConfig"
-    [countryListConfig]="countryListConfig" (onCountryChange)="onCountryChange($event)"></app-country-list> -->
-</div>
+<div class="container-fluid">
+  <h2>Country list examples using Ngx Countries Dropdown </h2>
+  <p>Below are some examples which can be created using <a href="https://www.npmjs.com/package/ngx-countries-dropdown" target="_blank">Ngx Countries dropdown</a> package.</p>
+  <p>Github repository for these examples <a href="https://github.com/kapilkumar0037/country-library-usecases" target="_blank">Ngx Countries dropdown library use cases</a></p>
 
-<div class="mb-3">
-  <label for="formGroupExampleInput" class="form-label">Country list</label>
-  <lib-country-list [preferredCountryCodes]="preferredCountryCodes" [blockedCountryCodes]="blockedCountryCodes"
-    [allowedCountryCodes]="allowedCountryCodes" [selectedCountryConfig]="selectedCountryConfig"
-    [countryListConfig]="countryListConfig" (onCountryChange)="onCountryChange($event)"></lib-country-list>
+  <div class="row mb-3">
+    <div class="col-6">
+      <h5>Default Country list</h5>
+      <lib-country-list></lib-country-list>
+    
+    </div>   
+  </div>
+  <div class="row mb-3">
+    <div class="col-6">
+      <h5>Country list with preferred countries. Ex. India and United States selected as preferred</h5>
+      <app-preferred-countries></app-preferred-countries>
+    </div>
+  </div>
+  <div class="row mb-3">
+    <div class="col-6">
+      <h5>Country list without some countries. Ex. Albania is not in the list </h5>
+      <app-blocked-countries></app-blocked-countries>
+    </div>
+  </div>
+  <div class="row mb-3">
+    <div class="col-6">
+      <h5>Default selected country</h5>
+      <app-default-select-country></app-default-select-country>
+    </div>
+  </div>
+  <div class="row mb-3">
+    <div class="col-6">
+      <h5>Display only specific countries, Ex. only India, USA and Afganistan are in list</h5>
+      <app-only-specific-countries></app-only-specific-countries>
+    </div>
+  </div>
+  <!-- <div class="mb-3">
+    <label for="formGroupExampleInput" class="form-label">Country list</label>
+    <lib-country-list [preferredCountryCodes]="preferredCountryCodes" [blockedCountryCodes]="blockedCountryCodes"
+      [allowedCountryCodes]="allowedCountryCodes" [selectedCountryConfig]="selectedCountryConfig"
+      [countryListConfig]="countryListConfig" (onCountryChange)="onCountryChange($event)"></lib-country-list>
+  </div> -->
 </div>

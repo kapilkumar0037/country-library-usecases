@@ -11,18 +11,18 @@ export class AppComponent {
   preferredCountryCodes: string[] = ['us', 'in'];
   blockedCountryCodes: string[] = [];
   selectedCountryConfig: IConfig = {
-    displayCurrencyCode: true,
-    displayCurrencyName: true,
-    displayCurrencySymbol: true,
-    displayLanguageCode: true,
-    displayLanguageName: true
+    // displayCurrencyCode: true,
+    // displayCurrencyName: true,
+    // displayCurrencySymbol: true,
+    // displayLanguageCode: true,
+    // displayLanguageName: true
   };
   countryListConfig: IConfig = {
-    displayCurrencyCode: true,
-    displayCurrencyName: true,
-    displayCurrencySymbol: true,
-    displayLanguageCode: true,
-    displayLanguageName: true
+    // displayCurrencyCode: true,
+    // displayCurrencyName: true,
+    // displayCurrencySymbol: true,
+    // displayLanguageCode: true,
+    // displayLanguageName: true
   };
   allowedCountryCodes: string[] = [];
 
