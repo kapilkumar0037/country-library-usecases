@@ -30,6 +30,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -71,7 +72,8 @@
               "browserTarget": "Country-library-usecases:build:development"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "development",
+          "options": {"port": 4201}
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
