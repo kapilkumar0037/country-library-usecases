@@ -12,6 +12,7 @@ import { CurrencyListComponent } from './components/currency-list/currency-list.
 import { LanguageListComponent } from './components/language-list/language-list.component';
 import { ConfigPropertiesDemoComponent } from './components/config-properties-demo/config-properties-demo.component';
 import { OnlySpecificCountriesComponent } from './components/only-specific-countries/only-specific-countries.component';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { OnlySpecificCountriesComponent } from './components/only-specific-count
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxCountriesDropdownModule
+    NgxCountriesDropdownModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
