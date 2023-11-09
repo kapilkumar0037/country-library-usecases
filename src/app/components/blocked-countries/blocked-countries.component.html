@@ -1,1 +1,7 @@
-<lib-country-list [blockedCountryCodes]="blockedCountryCodes" (onCountryChange)="onCountryChange($event)"></lib-country-list>    
+<div class="row mb-3">
+    <div class="col-6">
+      <h5>Country list without some countries. Ex. Albania is not in the list </h5>
+      <lib-country-list [blockedCountryCodes]="blockedCountryCodes" (onCountryChange)="onCountryChange($event)"></lib-country-list>    
+
+    </div>
+  </div>

@@ -13,6 +13,7 @@ import { LanguageListComponent } from './components/language-list/language-list.
 import { ConfigPropertiesDemoComponent } from './components/config-properties-demo/config-properties-demo.component';
 import { OnlySpecificCountriesComponent } from './components/only-specific-countries/only-specific-countries.component';
 import { CoreModule } from './core/core.module';
+import { DefaultCountryListComponent } from './components/default-country-list/default-country-list.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CoreModule } from './core/core.module';
     CurrencyListComponent,
     LanguageListComponent,
     ConfigPropertiesDemoComponent,
-    OnlySpecificCountriesComponent
+    OnlySpecificCountriesComponent,
+    DefaultCountryListComponent
   ],
   imports: [
     BrowserModule,
