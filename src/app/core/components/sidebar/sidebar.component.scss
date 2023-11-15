@@ -1,4 +1,10 @@
 .sidebar{
-    height: calc(100vh - 6rem);
+    height: calc(100vh - 4.5rem);
     position: sticky;
+    box-shadow: 1px 0 1px rgb(222, 226, 230);
+    //border-right: 1px solid rgb(222, 226, 230);
+}
+
+a.active {
+    background-color: #56c163;
 }

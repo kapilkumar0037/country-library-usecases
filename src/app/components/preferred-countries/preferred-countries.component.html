@@ -1,6 +1,8 @@
 <div class="row mb-3">
-    <div class="col-6">
-      <h5>Country list with preferred countries. Ex. India and United States selected as preferred</h5>
+  <div class="col-12">
+    <h5>Country list with preferred countries. Ex. India and United States selected as preferred</h5>
+  </div>
+    <div class="col-6 pt-3">
       <lib-country-list [preferredCountryCodes]="preferredCountryCodes" (onCountryChange)="onCountryChange($event)"></lib-country-list>    
     </div>
   </div>
