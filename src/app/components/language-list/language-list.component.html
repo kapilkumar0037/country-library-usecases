@@ -1,1 +1,9 @@
-<p>language-list works!</p>
+<div class="row mb-3">
+    <div class="col-12">
+      <h5>Language list with country flag</h5>
+    </div>
+    <div class="col-2 pt-3">
+      <lib-country-list [selectedCountryConfig]="selectedCountryConfig" [countryListConfig]="countryListConfig"
+        (onCountryChange)="onCountryChange($event)"></lib-country-list>
+    </div>
+  </div>

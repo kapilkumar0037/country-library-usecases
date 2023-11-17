@@ -5,6 +5,8 @@ import { PreferredCountriesComponent } from './components/preferred-countries/pr
 import { BlockedCountriesComponent } from './components/blocked-countries/blocked-countries.component';
 import { DefaultSelectCountryComponent } from './components/default-select-country/default-select-country.component';
 import { OnlySpecificCountriesComponent } from './components/only-specific-countries/only-specific-countries.component';
+import { DialCodeListComponent } from './components/dial-code-list/dial-code-list.component';
+import { LanguageListComponent } from './components/language-list/language-list.component';
 
 const routes: Routes = [
   {path:'', pathMatch:'full', redirectTo:'default'},
@@ -13,6 +15,10 @@ const routes: Routes = [
   {path: 'without', component: BlockedCountriesComponent},
   {path: 'selected', component: DefaultSelectCountryComponent},
   {path: 'specific', component: OnlySpecificCountriesComponent},
+  {path: 'dialcode', component: DialCodeListComponent},
+  {path: 'language', component: LanguageListComponent},
+
+
 
 ];
 
