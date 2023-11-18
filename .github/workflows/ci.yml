@@ -45,3 +45,4 @@ jobs:
           git add .
           git commit -m "Deployed from GitHub Actions"
           git push --force --quiet "https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" deploy
+
