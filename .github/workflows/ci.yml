@@ -35,13 +35,13 @@ jobs:
 
       - name: Copy files to another branch
         run: |
-          mkdir -p $HOME/deploy
-          cp -r dist/* $HOME/deploy
-          cd $HOME/deploy
+          mkdir -p $HOME/branch-repo
+          cp -r dist/* $HOME/branch-repo
+          cd $HOME/branch-repo
           git init
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor }}@users.noreply.github.com"
           git checkout -b deploy
           git add .
           git commit -m "Deployed from GitHub Actions"
-          git push --force --quiet "https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" target-branch
+          git push --force --quiet "https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" deploy
