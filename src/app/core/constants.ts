@@ -43,6 +43,12 @@ export class CoreConstants {
       description:
         'Language code list with country flag',
       route: '/language'
+    },
+    {
+      title: 'Config properties demo',
+      description:
+        'Demo of all config propeties availabe',
+      route: '/config'
     }
   ];
 }

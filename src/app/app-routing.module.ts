@@ -7,6 +7,7 @@ import { DefaultSelectCountryComponent } from './components/default-select-count
 import { OnlySpecificCountriesComponent } from './components/only-specific-countries/only-specific-countries.component';
 import { DialCodeListComponent } from './components/dial-code-list/dial-code-list.component';
 import { LanguageListComponent } from './components/language-list/language-list.component';
+import { ConfigPropertiesDemoComponent } from './components/config-properties-demo/config-properties-demo.component';
 
 const routes: Routes = [
   {path:'', pathMatch:'full', redirectTo:'default'},
@@ -17,8 +18,7 @@ const routes: Routes = [
   {path: 'specific', component: OnlySpecificCountriesComponent},
   {path: 'dialcode', component: DialCodeListComponent},
   {path: 'language', component: LanguageListComponent},
-
-
+  {path: 'config', component: ConfigPropertiesDemoComponent}
 
 ];
 

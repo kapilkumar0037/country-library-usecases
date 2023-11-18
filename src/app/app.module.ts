@@ -14,6 +14,7 @@ import { ConfigPropertiesDemoComponent } from './components/config-properties-de
 import { OnlySpecificCountriesComponent } from './components/only-specific-countries/only-specific-countries.component';
 import { CoreModule } from './core/core.module';
 import { DefaultCountryListComponent } from './components/default-country-list/default-country-list.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { DefaultCountryListComponent } from './components/default-country-list/d
     BrowserModule,
     AppRoutingModule,
     NgxCountriesDropdownModule,
-    CoreModule
+    CoreModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

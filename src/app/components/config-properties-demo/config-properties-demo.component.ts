@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IConfig } from 'ngx-countries-dropdown';
 
 @Component({
   selector: 'app-config-properties-demo',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class ConfigPropertiesDemoComponent {
 
+  config: IConfig = {};
+  onCountryChange(country: any) {
+    console.log(country);
+  }
 }

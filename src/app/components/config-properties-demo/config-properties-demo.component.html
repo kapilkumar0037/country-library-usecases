@@ -1,1 +1,58 @@
-<p>config-properties-demo works!</p>
+<div class="row mb-3">
+    <div class="col-12">
+        <h5>Config properties</h5>
+      </div>
+    <div class="col-12">
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" [(ngModel)]="config.hideFlag">
+            <label class="form-check-label" for="inlineCheckbox1">Hide flag</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" [(ngModel)]="config.hideCode">
+            <label class="form-check-label" for="inlineCheckbox2">Hide code</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" [(ngModel)]="config.hideDialCode">
+            <label class="form-check-label" for="inlineCheckbox3">Hide dial code</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" [(ngModel)]="config.hideName">
+            <label class="form-check-label" for="inlineCheckbox3">Hide name</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" [(ngModel)]="config.hideSearch">
+            <label class="form-check-label" for="inlineCheckbox3">Hide search</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" [(ngModel)]="config.displayCapital">
+            <label class="form-check-label" for="inlineCheckbox3">Display capital</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" [(ngModel)]="config.displayLanguageCode">
+            <label class="form-check-label" for="inlineCheckbox3">Display language code</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" [(ngModel)]="config.displayLanguageName">
+            <label class="form-check-label" for="inlineCheckbox3">Display language name</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" [(ngModel)]="config.displayCurrencyCode">
+            <label class="form-check-label" for="inlineCheckbox3">Display currency code</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" [(ngModel)]="config.displayCurrencyName">
+            <label class="form-check-label" for="inlineCheckbox3">Display currency name</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" [(ngModel)]="config.displayCurrencySymbol">
+            <label class="form-check-label" for="inlineCheckbox3">Display currency symbol</label>
+          </div>
+    </div>
+      <div class="col-6 pt-3">
+        <lib-country-list  [selectedCountryConfig]="config" [countryListConfig]="config" (onCountryChange)="onCountryChange($event)"></lib-country-list>    
+      </div>
+    </div>
+
+  
+
+
