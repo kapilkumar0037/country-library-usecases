@@ -41,8 +41,8 @@ jobs:
          git init
          git config user.name "${{ github.actor }}"
          git config user.email "${{ github.actor }}@users.noreply.github.com"
-         git checkout -b target-branch
+         git checkout -b deploy
          git add .
          git commit -m "Deployed from GitHub Actions"
          git remote add origin "https://github.com/${{ github.repository }}.git"
-         git push --force --quiet origin target-branch:${{ github.sha }}
+         git push --force --quiet origin deploy:${{ github.sha }}
