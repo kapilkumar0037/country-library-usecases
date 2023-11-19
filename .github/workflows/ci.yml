@@ -44,5 +44,5 @@ jobs:
           git checkout -b deploy
           git add .
           git commit -m "Deployed from GitHub Actions"
-          git remote add origin "https://github.com/${{ github.repository }}.git"
+          git remote add origin "https://github.com/kapilkumar0037/country-library-usecases.git"
           git push --force --quiet origin deploy
