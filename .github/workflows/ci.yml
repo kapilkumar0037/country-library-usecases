@@ -35,14 +35,14 @@ jobs:
 
       - name: Copy files to another branch
         run: |
-          mkdir -p $HOME/branch-repo
-          cp -r dist/* $HOME/branch-repo
-          cd $HOME/branch-repo
-          git init
-          git config user.name "${{ github.actor }}"
-          git config user.email "${{ github.actor }}@users.noreply.github.com"
-          git checkout -b deploy
-          git add .
-          git commit -m "Deployed from GitHub Actions"
-          git remote add origin "https://github.com/kapilkumar0037/country-library-usecases.git"
-          git push --force --quiet origin deploy
+         mkdir -p $HOME/branch-repo
+         cp -r dist/* $HOME/branch-repo
+         cd $HOME/branch-repo
+         git init
+         git config user.name "${{ github.actor }}"
+         git config user.email "${{ github.actor }}@users.noreply.github.com"
+         git checkout -b target-branch
+         git add .
+         git commit -m "Deployed from GitHub Actions"
+         git remote add origin "https://github.com/${{ github.repository }}.git"
+         git push --force --quiet origin target-branch:${{ github.sha }}
