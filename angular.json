@@ -66,10 +66,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Country-library-usecases:build:production"
+              "buildTarget": "Country-library-usecases:build:production"
             },
             "development": {
-              "browserTarget": "Country-library-usecases:build:development"
+              "buildTarget": "Country-library-usecases:build:development"
             }
           },
           "defaultConfiguration": "development",
@@ -78,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Country-library-usecases:build"
+            "buildTarget": "Country-library-usecases:build"
           }
         },
         "test": {
