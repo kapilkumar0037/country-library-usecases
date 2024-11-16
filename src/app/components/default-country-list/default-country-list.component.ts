@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./default-country-list.component.scss']
 })
 export class DefaultCountryListComponent {
-
+  readonly placeholderText = "Select";
 }
