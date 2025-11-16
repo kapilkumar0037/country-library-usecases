@@ -1,12 +1,14 @@
 <aside class="sidebar overflow-y-auto rounded pt-3">
-    <div class=" bg-white">       
-        <div class="list-group list-group-flush border-bottom scrollarea">
-            <a [routerLink]="item.route" [routerLinkActive]="'active'" class="list-group-item list-group-item-action lh-tight" *ngFor="let item of sidebar">
-                <div class="d-flex w-100 align-items-center justify-content-between">
-                    <strong class="mb-1">{{item.title}}</strong>                   
-                </div>
-                <div class="col-12 mb-1 small">{{item.description}}</div>
-            </a>                     
-        </div>
+  <div class=" bg-white">
+    <div class="list-group list-group-flush border-bottom scrollarea">
+      @for (item of sidebar; track item) {
+        <a [routerLink]="item.route" [routerLinkActive]="'active'" class="list-group-item list-group-item-action lh-tight">
+          <div class="d-flex w-100 align-items-center justify-content-between">
+            <strong class="mb-1">{{item.title}}</strong>
+          </div>
+          <div class="col-12 mb-1 small">{{item.description}}</div>
+        </a>
+      }
     </div>
+  </div>
 </aside>
