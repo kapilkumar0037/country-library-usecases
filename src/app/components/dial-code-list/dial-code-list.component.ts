@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { IConfig } from 'ngx-countries-dropdown';
 
 @Component({
-  selector: 'app-dial-code-list',
-  templateUrl: './dial-code-list.component.html',
-  styleUrls: ['./dial-code-list.component.scss']
+    selector: 'app-dial-code-list',
+    templateUrl: './dial-code-list.component.html',
+    styleUrls: ['./dial-code-list.component.scss'],
+    standalone: false
 })
 export class DialCodeListComponent {
   selectedCountryConfig: IConfig = {
